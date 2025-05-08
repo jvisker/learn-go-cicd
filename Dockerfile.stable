@@ -1,8 +1,8 @@
 FROM golang:1.23.1
 
 # COPY source destination
-COPY . /bin/myapp
-
+COPY ./bin/myapp /bin/myapp
+ENV PORT=8080
 CMD ["/bin/myapp"]
 
 # docker build . -t myapp:latest
